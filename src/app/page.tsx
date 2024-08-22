@@ -1,12 +1,11 @@
 import Image from "next/image";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <Image
         src="/assets/images/illustration-sign-up-mobile.svg"
         alt="logo"
-        width={200}
-        height={200}
+        width={500}
       ></Image>
       <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
