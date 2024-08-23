@@ -2,12 +2,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      <img src="" alt="" />
       <Image
         src="/assets/images/illustration-sign-up-mobile.svg"
         alt="logo"
         width={500}
+        height={500}
+        className="block md:hidden"
       ></Image>
-      <h1>Stay updated!</h1>
+      <h1 className="text-3xl font-semibold">Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>
         <li>Product discovery and building what matters</li>
@@ -16,15 +19,14 @@ export default function Home() {
       </ul>
       <form action="submit">
         <label htmlFor="email">Email address</label>
-        <input type="email" placeholder="Email address" />
-        <button type="submit">Subscribe to monthly newsletter</button>
+        <input type="email" placeholder="email@company.com" />
+        <button type="submit" className="text-white bg-dark-slate-grey">
+          Subscribe to monthly newsletter
+        </button>
       </form>
-      Stay updated! Join 60,000+ product managers receiving monthly updates on:
-      Product discovery and building what matters Measuring to ensure updates
-      are a success And much more! Email address email@company.com Subscribe to
-      monthly newsletter Thanks for subscribing! A confirmation email has been
-      sent to ash@loremcompany.com. Please open it and click the button inside
-      to confirm your subscription. Dismiss message
+      {/* Thanks for subscribing! A confirmation email has been sent to
+      ash@loremcompany.com. Please open it and click the button inside to
+      confirm your subscription. Dismiss message */}
     </main>
   );
 }
